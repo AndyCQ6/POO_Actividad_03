@@ -1,0 +1,48 @@
+public class TV {
+    private int channel;
+    private int volumeLevel;
+    private boolean on;
+
+    public TV() {
+        this.channel = 1;
+        this.volumeLevel = 50;
+        this.on = false;
+    }
+
+    public void turnOn(){
+        on = true;
+    }
+
+    public void turnOff(){
+        on = false;
+    }
+
+    public void setChannel(int newChannel) {
+        this.channel = newChannel;
+    }
+
+    public int getChannel() {
+        return channel;
+    }
+
+    public int getVolumeLevel() {
+        return volumeLevel;
+    }
+
+    public void channelUP(){
+        this.channel = channel + 1;
+    }
+
+    public void channelDown(){
+        this.channel = channel - 1;
+    }
+
+    public void volumeUp(){
+        this.volumeLevel = volumeLevel + 1;
+    }
+
+    public void volumeDown(){
+        this.volumeLevel = volumeLevel - 1;
+    }
+
+}
